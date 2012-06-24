@@ -28,7 +28,7 @@ remote_file zeromq_tar_gz do
 end
 
 package "uuid-dev" do
-  action :upgrade
+  action :install
 end
 
 bash "install zeromq #{node[:zeromq][:src_version]}" do
