@@ -19,4 +19,8 @@
 
 default[:zeromq][:src_version] = "2.2.0"
 default[:zeromq][:install_dir] = "/opt/zeromq-#{zeromq[:src_version]}"
-default[:zeromq][:src_mirror]  = "http://www.zeromq.org/local--files/area:download/zeromq-#{zeromq[:src_version]}.tar.gz"
+
+
+#default[:zeromq][:src_mirror]  = "http://www.zeromq.org/local--files/area:download/zeromq-#{zeromq[:src_version]}.tar.gz"
+#default[:zeromq][:src_mirror]  = "https://github.com/zeromq/zeromq2-x/tarball/v#{zeromq[:src_version]}"
+default[:zeromq][:src_mirror]  = "http://download.zeromq.org/zeromq-#{zeromq[:src_version]}.tar.gz"
